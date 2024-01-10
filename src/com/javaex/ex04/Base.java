@@ -1,10 +1,24 @@
 package com.javaex.ex04;
 
 public class Base {
-    
+	
     public void service(String state) {
         
-        //코드작성할것
+    	switch(state) {
+    		case "낮":
+    		day();
+    		break;
+    		
+    		case "밤":
+    		night();
+    		break;
+    	
+    		case "오후":
+    		afternoon();
+    		break;
+    	}
+       
+    	//코드작성할것
     }
 
     public void day() {
@@ -12,6 +26,7 @@ public class Base {
     }
 
     public void night() {
+    	System.out.println("밤에는 숙면");
         
     	//코드작성할것
     }
